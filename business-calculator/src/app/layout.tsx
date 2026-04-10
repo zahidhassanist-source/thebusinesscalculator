@@ -4,13 +4,13 @@ import { AuthProvider } from '@/context/AuthContext'
 
 export const metadata: Metadata = {
   title: 'BizCalc — Business Cost Calculator',
-  description: 'Calculate fixed costs, variable costs, and total business costs per month',
+  description: 'Professional business cost planning tool',
 }
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
-      <body style={{ fontFamily: "'DM Mono', monospace" }}>
+      <body>
         <AuthProvider>{children}</AuthProvider>
       </body>
     </html>
